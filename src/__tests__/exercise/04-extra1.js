@@ -10,11 +10,7 @@ test('submitting the form calls onSubmit with username and password', () => {
   // 🐨 create a variable called "submittedData" and a handleSubmit function that
   // accepts the data and assigns submittedData to the data that was submitted
 
-  let submittedData;
-
-  const handleSubmit = data => {
-    submittedData = data;
-  };
+  const handleSubmit = jest.fn();
   // 💰 if you need a hand, here's what the handleSubmit function should do:
   // const handleSubmit = data => (submittedData = data)
   //
@@ -37,7 +33,11 @@ test('submitting the form calls onSubmit with username and password', () => {
   //
   // assert that submittedData is correct
   // 💰 use `toEqual` from Jest: 📜 https://jestjs.io/docs/en/expect#toequalvalue
-  expect(submittedData).toEqual({username: username, password: password});
+  expect(handleSubmit).toHaveBeenCalledWith({
+    username: username,
+    password: password,
+  });
+  expect(handleSubmit).toHaveBeenCalledTimes(1);
 });
 
 /*
