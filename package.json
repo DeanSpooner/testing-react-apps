@@ -2,7 +2,7 @@
   "name": "testing-react-applications-workshop",
   "title": "Testing React Applications 🧐",
   "description": "Learn how to test react components and applications",
-  "author": "Kent C. Dodds <me@kentcdodds.com> (https://kentcdodds.com/)",
+  "author": "Dean Spooner",
   "version": "1.0.0",
   "private": true,
   "license": "GPL-3.0",
@@ -76,10 +76,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kentcdodds/testing-react-app.git"
+    "url": "git+https://github.com/deanspooner/testing-react-apps.git"
   },
   "bugs": {
-    "url": "https://github.com/kentcdodds/testing-react-app/issues"
+    "url": "https://github.com/deanspooner/testing-react-apps/issues"
   },
   "homepage": "https://testing-react-app.netlify.app",
   "browserslist": [
